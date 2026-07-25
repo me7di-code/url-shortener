@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortLink - Modern URL Shortener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>ShortLink<span class="dot">.</span></h1>
+            <p>Make your long, messy links short, sleek, and trackable.</p>
+        </header>
+
+        <section class="shortener-box glass-panel">
+            <form id="shorten-form">
+                <div class="input-group">
+                    <i class="ph ph-link"></i>
+                    <input type="url" id="url-input" placeholder="Paste your long link here..." required>
+                    <button type="submit" id="submit-btn">
+                        <span>Shorten</span>
+                        <i class="ph ph-magic-wand"></i>
+                    </button>
+                </div>
+                <div id="form-message" class="message hidden"></div>
+            </form>
+        </section>
+
+        <section class="dashboard">
+            <div class="dashboard-header">
+                <h2>Your Links</h2>
+                <button id="refresh-btn" class="icon-btn" title="Refresh list">
+                    <i class="ph ph-arrows-clockwise"></i>
+                </button>
+            </div>
+            
+            <div id="links-container" class="links-grid">
+                <!-- Links will be injected here via JS -->
+            </div>
+            
+            <div id="empty-state" class="empty-state hidden">
+                <i class="ph ph-link-break"></i>
+                <p>No shortened links yet. Create one above!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i class="ph ph-check-circle toast-icon"></i>
+        <span class="toast-message">Copied to clipboard</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
