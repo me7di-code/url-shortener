@@ -131,3 +131,4 @@ Simply open `frontend/index.html` in your favorite web browser or serve it using
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
+Project inspired by https://roadmap.sh/projects/url-shortening-service
