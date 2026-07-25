@@ -75,7 +75,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/me7di-code/url-shortener.git
    cd url-shortener
    ```
 
